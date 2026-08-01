@@ -72,9 +72,9 @@ function createMap() {
                     log.textContent = "⛰️ 山地：天然防御地形。";
                     break;
 
-                case "🐺":
-                    log.textContent = "🐺 这里是你的领地。";
-                    break;
+                case playerIcon:
+    log.textContent = playerCountry + " 的领地。";
+    break;
             }
 
         };
