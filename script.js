@@ -105,3 +105,26 @@ document.getElementById("endTurn").onclick = function () {
         "📅 第 " + turn + " 回合开始，狼群完成了今天的活动。";
 
 };
+document.getElementById("playBtn").onclick = function () {
+
+    document.getElementById("menuScreen").style.display = "none";
+
+    document.getElementById("countryScreen").style.display = "block";
+
+};
+let playerCountry = "";
+
+function chooseCountry(country){
+
+    playerCountry = country;
+
+    document.getElementById("countryTitle").textContent = country;
+
+    document.getElementById("countryScreen").style.display = "none";
+
+    document.getElementById("gameScreen").style.display = "block";
+
+    createMap();
+
+    document.getElementById("log").textContent =
+        "欢迎来到" + country + "！";
