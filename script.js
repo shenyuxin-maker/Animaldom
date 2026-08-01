@@ -47,10 +47,9 @@ function createMap() {
         let terrain = terrains[Math.floor(Math.random() * terrains.length)];
 
         if (!wolfPlaced && terrain !== "🌊" && Math.random() < 0.08) {
-            terrain = "🐺";
-            wolfPlaced = true;
-        }
-
+    terrain = playerIcon;
+    wolfPlaced = true;
+}
         tile.textContent = terrain;
 
         tile.onclick = function () {
