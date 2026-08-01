@@ -2,49 +2,103 @@
 <html lang="zh-CN">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>百兽列国 v0.3</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style.css">
+<title>Animaldom - 百兽列国</title>
+
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <h1>🐾 百兽列国</h1>
+<!-- ================= 主菜单 ================= -->
 
-    <div id="game">
+<div id="menuScreen">
 
-        <!-- 地图 -->
-        <div id="mapArea">
-            <h2>🌍 灵野大陆</h2>
+<h1>🐺 Animaldom</h1>
 
-            <div id="map"></div>
-        </div>
+<h2>百兽列国</h2>
 
-        <!-- 国家信息 -->
-        <div id="infoArea">
-            <h2>🐺 狼国</h2>
+<p>一款动物策略游戏</p>
 
-            <p>🍖 食物：<span id="food">100</span></p>
+<button id="playBtn">
+开始游戏
+</button>
 
-            <p>🌿 材料：<span id="wood">80</span></p>
+</div>
 
-            <p>⭐ 士气：<span id="morale">100</span></p>
+<!-- ================= 国家选择 ================= -->
 
-            <p>📅 回合：<span id="turn">1</span></p>
+<div id="countryScreen" style="display:none;">
 
-            <button id="endTurn">结束回合</button>
-        </div>
+<h2>请选择国家</h2>
 
-    </div>
+<button onclick="chooseCountry('🐺 狼国')">
+🐺 狼国
+</button>
 
-    <!-- 日志 -->
-    <div id="log">
-        欢迎来到灵野大陆！
-    </div>
+<button onclick="chooseCountry('🦊 狐国')">
+🦊 狐国（开发中）
+</button>
 
-    <script src="script.js"></script>
+<button onclick="chooseCountry('🐻 熊国')">
+🐻 熊国（开发中）
+</button>
+
+</div>
+
+<!-- ================= 游戏 ================= -->
+
+<div id="gameScreen" style="display:none;">
+
+<h1 id="countryTitle">
+🐺 狼国
+</h1>
+
+<div id="game">
+
+<div id="mapArea">
+
+<h2>🌍 灵野大陆</h2>
+
+<div id="map"></div>
+
+</div>
+
+<div id="infoArea">
+
+<p>🍖 食物：
+<span id="food">100</span>
+</p>
+
+<p>🌿 木材：
+<span id="wood">80</span>
+</p>
+
+<p>⭐ 士气：
+<span id="morale">100</span>
+</p>
+
+<p>📅 回合：
+<span id="turn">1</span>
+</p>
+
+<button id="endTurn">
+结束回合
+</button>
+
+</div>
+
+</div>
+
+<div id="log">
+欢迎来到灵野大陆！
+</div>
+
+</div>
+
+<script src="script.js"></script>
 
 </body>
 
