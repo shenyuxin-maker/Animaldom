@@ -1,0 +1,75 @@
+body{
+    margin:0;
+    font-family:Arial,Helvetica,sans-serif;
+    background:#d9efd3;
+}
+
+h1{
+    text-align:center;
+    background:#2e7d32;
+    color:white;
+    margin:0;
+    padding:18px;
+}
+
+#game{
+    display:flex;
+    padding:20px;
+    gap:20px;
+}
+
+#mapArea{
+    flex:3;
+    background:white;
+    border-radius:10px;
+    padding:15px;
+}
+
+#infoArea{
+    flex:1;
+    background:white;
+    border-radius:10px;
+    padding:15px;
+}
+
+#map{
+    display:grid;
+    grid-template-columns:repeat(10,50px);
+    gap:2px;
+    margin-top:15px;
+}
+
+.tile{
+    width:50px;
+    height:50px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:28px;
+    border:1px solid #888;
+    user-select:none;
+}
+
+button{
+    width:100%;
+    height:45px;
+    margin-top:15px;
+    font-size:18px;
+    border:none;
+    border-radius:8px;
+    background:#43a047;
+    color:white;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#2e7d32;
+}
+
+#log{
+    margin:20px;
+    background:white;
+    padding:15px;
+    border-radius:10px;
+    font-size:18px;
+}
