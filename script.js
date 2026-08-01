@@ -101,6 +101,17 @@ document.getElementById("playBtn").onclick = function () {
 function chooseCountry(country) {
 
     playerCountry = country;
+    if (country === "🐺 狼国") {
+    playerIcon = "🐺";
+}
+
+if (country === "🦊 狐国") {
+    playerIcon = "🦊";
+}
+
+if (country === "🐻 熊国") {
+    playerIcon = "🐻";
+}
 
     document.getElementById("countryTitle").textContent = country;
 
