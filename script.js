@@ -56,10 +56,6 @@ img.src = terrain + ".png";
 
 tile.appendChild(img);
 
-img.src = terrain + ".png";
-
-tile.appendChild(img);
-
         tile.onclick = function () {
 
             switch (terrain) {
