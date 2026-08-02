@@ -56,7 +56,7 @@ img.src = terrain + ".png";
 
 tile.appendChild(img);
 
-img.src = "images/" + terrain + ".png";
+img.src = terrain + ".png";
 
 tile.appendChild(img);
 
