@@ -20,7 +20,8 @@ let morale = 100;
 let turn = 1;
 
 let playerCountry = "";
-let playerIcon = "🐺";
+let playerIcon = "wolf
+    ";
 
 // ================= 地图 =================
 
@@ -107,16 +108,27 @@ document.getElementById("playBtn").onclick = function () {
 function chooseCountry(country) {
 
     playerCountry = country;
+
     if (country === "🐺 狼国") {
-    playerIcon = "🐺";
-}
+        playerIcon = "wolf";
+    }
 
-if (country === "🦊 狐国") {
-    playerIcon = "🦊";
-}
+    if (country === "🦊 狐国") {
+        playerIcon = "fox";
+    }
 
-if (country === "🐻 熊国") {
-    playerIcon = "🐻";
+    if (country === "🐻 熊国") {
+        playerIcon = "bear";
+    }
+
+    document.getElementById("countryTitle").textContent = country;
+
+    countryScreen.style.display = "none";
+    gameScreen.style.display = "block";
+
+    createMap();
+
+    log.textContent = "欢迎来到" + country + "！";
 }
 
     document.getElementById("countryTitle").textContent = country;
