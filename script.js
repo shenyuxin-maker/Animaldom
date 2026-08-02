@@ -50,7 +50,11 @@ function createMap() {
     terrain = playerIcon;
     wolfPlaced = true;
 }
-        const img = document.createElement("img");
+const img = document.createElement("img");
+
+img.src = terrain + ".png";
+
+tile.appendChild(img);
 
 img.src = "images/" + terrain + ".png";
 
