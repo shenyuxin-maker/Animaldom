@@ -126,17 +126,6 @@ function chooseCountry(country) {
     log.textContent = "欢迎来到" + country + "！";
 }
 
-    document.getElementById("countryTitle").textContent = country;
-
-    countryScreen.style.display = "none";
-    gameScreen.style.display = "block";
-
-    createMap();
-
-    log.textContent = "欢迎来到" + country + "！";
-
-}
-
 // ================= 回合 =================
 
 document.getElementById("endTurn").onclick = function () {
