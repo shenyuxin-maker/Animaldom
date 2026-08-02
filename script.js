@@ -25,13 +25,12 @@ let playerIcon = "🐺";
 // ================= 地图 =================
 
 const terrains = [
-    "🌲",
-    "🌾",
-    "🌾",
-    "🌲",
-    "🌲",
-    "🌊",
-    "⛰️"
+    "grass",
+    "grass",
+    "forest",
+    "forest",
+    "river",
+    "mountain"
 ];
 
 function createMap() {
