@@ -51,7 +51,11 @@ function createMap() {
     terrain = playerIcon;
     wolfPlaced = true;
 }
-        tile.textContent = terrain;
+        const img = document.createElement("img");
+
+img.src = "images/" + terrain + ".png";
+
+tile.appendChild(img);
 
         tile.onclick = function () {
 
