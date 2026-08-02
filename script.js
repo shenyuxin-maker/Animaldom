@@ -139,7 +139,7 @@ function chooseCountry(country) {
 
 // ================= 回合 =================
 
-document.getElementById("endTurn").onclick = function ()
+document.getElementById("endTurn").onclick = function () {
 
     turn++;
 
