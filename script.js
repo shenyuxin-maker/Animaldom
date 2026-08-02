@@ -46,7 +46,7 @@ function createMap() {
 
         let terrain = terrains[Math.floor(Math.random() * terrains.length)];
 
-        if (!wolfPlaced && terrain !== "🌊" && Math.random() < 0.08) {
+        if (!wolfPlaced && terrain !== "Lake" && Math.random() < 0.08) {
     terrain = playerIcon;
     wolfPlaced = true;
 }
@@ -60,11 +60,11 @@ tile.appendChild(img);
 
             switch (terrain) {
 
-                case "🌲":
+                case "forest":
                     log.textContent = "🌲 森林：这里木材丰富。";
                     break;
 
-                case "🌾":
+                case "grass":
                     log.textContent = "🌾 草原：这里食物充足。";
                     break;
 
