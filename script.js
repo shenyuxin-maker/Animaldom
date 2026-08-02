@@ -30,7 +30,7 @@ const terrains = [
     "grass",
     "forest",
     "forest",
-    "Lake",
+    "lake",
     "mountain"
 ];
 function createMap() {
@@ -46,7 +46,7 @@ function createMap() {
 
         let terrain = terrains[Math.floor(Math.random() * terrains.length)];
 
-        if (!wolfPlaced && terrain !== "Lake" && Math.random() < 0.08) {
+        if (!wolfPlaced && terrain !== "lake" && Math.random() < 0.08) {
     terrain = playerIcon;
     wolfPlaced = true;
 }
@@ -68,11 +68,11 @@ tile.appendChild(img);
                     log.textContent = "🌾 草原：这里食物充足。";
                     break;
 
-                case "🌊":
+                case "lake":
                     log.textContent = "🌊 河流：目前无法穿越。";
                     break;
 
-                case "⛰️":
+                case "mountain":
                     log.textContent = "⛰️ 山地：天然防御地形。";
                     break;
 
