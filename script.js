@@ -20,8 +20,7 @@ let morale = 100;
 let turn = 1;
 
 let playerCountry = "";
-let playerIcon = "wolf
-    ";
+let playerIcon = "wolf";
 
 // ================= 地图 =================
 
