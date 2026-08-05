@@ -103,15 +103,15 @@ function chooseCountry(country) {
     playerCountry = country;
 
     if (country === "🐺 狼国") {
-        playerIcon = "wolf";
+        playerIcon = "wolfcave";
     }
 
     if (country === "🦊 狐国") {
-        playerIcon = "fox";
+        playerIcon = "foxcave";
     }
 
     if (country === "🐻 熊国") {
-        playerIcon = "bear";
+        playerIcon = "beartree";
     }
 
     document.getElementById("countryTitle").textContent = country;
