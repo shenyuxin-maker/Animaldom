@@ -22,6 +22,19 @@ let turn = 1;
 let playerCountry = "";
 let playerIcon = "wolf";
 
+// ================= 人口 =================
+
+let babyMale = 0;
+let babyFemale = 0;
+
+let youngMale = 0;
+let youngFemale = 0;
+
+let adultMale = 2;
+let adultFemale = 2;
+
+let oldMale = 0;
+let oldFemale = 0;
 // ================= 地图 =================
 
 const terrains = [
