@@ -111,6 +111,28 @@ document.getElementById("playBtn").onclick = function () {
 };
 
 // ================= 国家选择 =================
+// ================= 人口更新 =================
+
+function updatePopulation() {
+
+    babyMaleText.textContent = babyMale;
+    babyFemaleText.textContent = babyFemale;
+
+    youngMaleText.textContent = youngMale;
+    youngFemaleText.textContent = youngFemale;
+
+    adultMaleText.textContent = adultMale;
+    adultFemaleText.textContent = adultFemale;
+
+    oldMaleText.textContent = oldMale;
+    oldFemaleText.textContent = oldFemale;
+
+    totalPopulationText.textContent =
+        babyMale + babyFemale +
+        youngMale + youngFemale +
+        adultMale + adultFemale +
+        oldMale + oldFemale;
+}
 
 function chooseCountry(country) {
 
@@ -134,6 +156,8 @@ function chooseCountry(country) {
     gameScreen.style.display = "block";
 
     createMap();
+
+    updatePopulation();
 
     log.textContent = "欢迎来到" + country + "！";
 }
