@@ -74,14 +74,14 @@ body{
 
 #map{
     display:grid;
-    grid-template-columns:repeat(10,64px);
+    grid-template-columns:repeat(10,45px);
     gap:2px;
     margin-top:15px;
 }
 
 .tile{
-    width:64px;
-    height:64px;
+    width:45px;
+    height:45px;
     display:flex;
     justify-content:center;
     align-items:center;
