@@ -12,16 +12,6 @@ const woodText = document.getElementById("wood");
 const moraleText = document.getElementById("morale");
 const turnText = document.getElementById("turn");
 
-// ================= 游戏数据 =================
-
-let food = 100;
-let wood = 80;
-let morale = 100;
-let turn = 1;
-
-let playerCountry = "";
-let playerIcon = "wolf";
-
 // ================= 人口 =================
 
 let babyMale = 0;
@@ -35,6 +25,17 @@ let adultFemale = 2;
 
 let oldMale = 0;
 let oldFemale = 0;
+
+// ================= 游戏数据 =================
+
+let food = 100;
+let wood = 80;
+let morale = 100;
+let turn = 1;
+
+let playerCountry = "";
+let playerIcon = "wolf";
+
 // ================= 地图 =================
 
 const terrains = [
