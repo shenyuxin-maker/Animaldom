@@ -38,6 +38,7 @@ let playerIcon = "wolf";
 let wolfCapital = null;
 let foxCapital = null;
 let bearCapital = null;
+ let playerCapital = -1;
 let usedCapitals = [];
 let units = [];
 
@@ -107,7 +108,6 @@ if (i === bearCapital) {
         playerCapital = i;
     }
 }
-        let playerCapital = -1;
 
         const img = document.createElement("img");
 img.src = terrain + ".png";
