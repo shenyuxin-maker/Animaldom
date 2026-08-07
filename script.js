@@ -39,6 +39,8 @@ let wolfCapital = null;
 let foxCapital = null;
 let bearCapital = null;
 
+let usedCapitals = [];
+
 function getRandomCapital() {
 
     while (true) {
