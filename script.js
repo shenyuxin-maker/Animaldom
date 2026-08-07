@@ -75,9 +75,9 @@ function createMap() {
     map.innerHTML = "";
     usedCapitals = [];
 
-    let wolfCapital = getRandomCapital();
-let foxCapital = getRandomCapital();
-let bearCapital = getRandomCapital();
+ wolfCapital = getRandomCapital();
+foxCapital = getRandomCapital();
+bearCapital = getRandomCapital();
     for (let i = 0; i < 100; i++) {
 
         const tile = document.createElement("div");
