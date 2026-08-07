@@ -54,7 +54,9 @@ function createMap() {
 
     map.innerHTML = "";
 
-    let capitalsPlaced = false;
+    let wolfCapital = Math.floor(Math.random() * 100);
+let foxCapital = Math.floor(Math.random() * 100);
+let bearCapital = Math.floor(Math.random() * 100);
 
     for (let i = 0; i < 100; i++) {
 
@@ -62,12 +64,19 @@ function createMap() {
         tile.className = "tile";
 
         let terrain = terrains[Math.floor(Math.random() * terrains.length)];
-
-        if (!wolfPlaced && terrain !== "lake" && Math.random() < 0.08) {
-    terrain = playerIcon;
-    wolfPlaced = true;
+if (i === wolfCapital) {
+    terrain = "wolfcave";
 }
-const img = document.createElement("img");
+
+if (i === foxCapital) {
+    terrain = "foxcave";
+}
+
+if (i === bearCapital) {
+    terrain = "beartree";
+}
+
+        const img = document.createElement("img");
 img.src = terrain + ".png";
 tile.appendChild(img);
 
