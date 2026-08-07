@@ -73,8 +73,7 @@ const terrains = [
 function createMap() {
 
     map.innerHTML = "";
-
-    let usedCapitals = [];
+    usedCapitals = [];
 
     let wolfCapital = getRandomCapital();
 let foxCapital = getRandomCapital();
