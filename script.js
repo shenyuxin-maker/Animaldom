@@ -54,6 +54,8 @@ function createMap() {
 
     map.innerHTML = "";
 
+    let usedCapitals = [];
+
     let wolfCapital = Math.floor(Math.random() * 100);
 let foxCapital = Math.floor(Math.random() * 100);
 let bearCapital = Math.floor(Math.random() * 100);
