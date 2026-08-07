@@ -213,12 +213,22 @@ function createStartingUnits() {
 
     units = [];
 
+    let capitalX = playerCapital % 10;
+    let capitalY = Math.floor(playerCapital / 10);
+
+    let unitX = capitalX + 1;
+    let unitY = capitalY;
+
+    if (unitX > 9) {
+        unitX = capitalX - 1;
+    }
+
     units.push({
         nation: playerCountry,
         male: 2,
         female: 2,
-        x: -1,
-        y: -1,
+        x: unitX,
+        y: unitY,
         moved: false
     });
 
