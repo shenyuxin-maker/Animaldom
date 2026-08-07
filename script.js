@@ -73,10 +73,9 @@ function createMap() {
 
     let usedCapitals = [];
 
-    let wolfCapital = Math.floor(Math.random() * 100);
-let foxCapital = Math.floor(Math.random() * 100);
-let bearCapital = Math.floor(Math.random() * 100);
-
+    let wolfCapital = getRandomCapital();
+let foxCapital = getRandomCapital();
+let bearCapital = getRandomCapital();
     for (let i = 0; i < 100; i++) {
 
         const tile = document.createElement("div");
