@@ -86,14 +86,26 @@ let bearCapital = getRandomCapital();
         let terrain = terrains[Math.floor(Math.random() * terrains.length)];
 if (i === wolfCapital) {
     terrain = "wolfcave";
+
+    if (playerCountry === "🐺 狼国") {
+        playerCapital = i;
+    }
 }
 
 if (i === foxCapital) {
     terrain = "foxcave";
+
+    if (playerCountry === "🦊 狐国") {
+        playerCapital = i;
+    }
 }
 
 if (i === bearCapital) {
     terrain = "beartree";
+
+    if (playerCountry === "🐻 熊国") {
+        playerCapital = i;
+    }
 }
         let playerCapital = -1;
 
