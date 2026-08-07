@@ -112,7 +112,33 @@ if (i === bearCapital) {
         const img = document.createElement("img");
 img.src = terrain + ".png";
 tile.appendChild(img);
+units.forEach(function(unit) {
 
+    if (
+        unit.x === i % 10 &&
+        unit.y === Math.floor(i / 10)
+    ) {
+
+        const unitImg = document.createElement("img");
+
+        if (unit.nation === "🐺 狼国") {
+            unitImg.src = "wolf.png";
+        }
+
+        if (unit.nation === "🦊 狐国") {
+            unitImg.src = "fox.png";
+        }
+
+        if (unit.nation === "🐻 熊国") {
+            unitImg.src = "bear.png";
+        }
+
+        unitImg.className = "unit";
+
+        tile.appendChild(unitImg);
+    }
+
+});
         tile.onclick = function () {
 
             switch (terrain) {
