@@ -123,3 +123,17 @@ button:hover{
     display:block;
     image-rendering:pixelated;
 }
+.tile{
+    position:relative;
+}
+
+.tile .unit{
+    position:absolute;
+    width:70%;
+    height:70%;
+    left:15%;
+    top:15%;
+    object-fit:contain;
+    image-rendering:pixelated;
+    z-index:2;
+}
