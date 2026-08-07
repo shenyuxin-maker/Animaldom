@@ -189,6 +189,8 @@ function chooseCountry(country) {
 
     createMap();
 
+    createStartingUnits();
+    
     updatePopulation();
 
     log.textContent = "欢迎来到" + country + "！";
