@@ -39,6 +39,23 @@ let wolfCapital = null;
 let foxCapital = null;
 let bearCapital = null;
 
+function getRandomCapital() {
+
+    while (true) {
+
+        let position = Math.floor(Math.random() * 100);
+
+        if (!usedCapitals.includes(position)) {
+
+            usedCapitals.push(position);
+            return position;
+
+        }
+
+    }
+
+}
+
 // ================= 地图 =================
 
 const terrains = [
