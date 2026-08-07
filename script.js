@@ -82,7 +82,8 @@ bearCapital = getRandomCapital();
 
         const tile = document.createElement("div");
         tile.className = "tile";
-
+        tile.dataset.index = i;
+     
         let terrain = terrains[Math.floor(Math.random() * terrains.length)];
 if (i === wolfCapital) {
     terrain = "wolfcave";
