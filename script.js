@@ -95,6 +95,7 @@ if (i === foxCapital) {
 if (i === bearCapital) {
     terrain = "beartree";
 }
+        let playerCapital = -1;
 
         const img = document.createElement("img");
 img.src = terrain + ".png";
