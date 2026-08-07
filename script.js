@@ -35,6 +35,9 @@ let turn = 1;
 
 let playerCountry = "";
 let playerIcon = "wolf";
+let wolfCapital = null;
+let foxCapital = null;
+let bearCapital = null;
 
 // ================= 地图 =================
 
