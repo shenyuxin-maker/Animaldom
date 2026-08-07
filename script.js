@@ -196,6 +196,20 @@ function chooseCountry(country) {
     log.textContent = "欢迎来到" + country + "！";
 }
 
+function createStartingUnits() {
+
+    units = [];
+
+    units.push({
+        nation: playerCountry,
+        male: 2,
+        female: 2,
+        x: -1,
+        y: -1,
+        moved: false
+    });
+
+}
 // ================= 回合 =================
 
 document.getElementById("endTurn").onclick = function () {
