@@ -54,7 +54,7 @@ function createMap() {
 
     map.innerHTML = "";
 
-    let wolfPlaced = false;
+    let capitalsPlaced = false;
 
     for (let i = 0; i < 100; i++) {
 
