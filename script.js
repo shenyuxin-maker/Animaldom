@@ -38,8 +38,8 @@ let playerIcon = "wolf";
 let wolfCapital = null;
 let foxCapital = null;
 let bearCapital = null;
-
 let usedCapitals = [];
+let units = [];
 
 function getRandomCapital() {
 
