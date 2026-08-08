@@ -11,6 +11,19 @@ const foodText = document.getElementById("food");
 const woodText = document.getElementById("wood");
 const moraleText = document.getElementById("morale");
 const turnText = document.getElementById("turn");
+const babyMaleText = document.getElementById("babyMale");
+const babyFemaleText = document.getElementById("babyFemale");
+
+const youngMaleText = document.getElementById("youngMale");
+const youngFemaleText = document.getElementById("youngFemale");
+
+const adultMaleText = document.getElementById("adultMale");
+const adultFemaleText = document.getElementById("adultFemale");
+
+const oldMaleText = document.getElementById("oldMale");
+const oldFemaleText = document.getElementById("oldFemale");
+
+const totalPopulationText = document.getElementById("totalPopulation");
 
 // ================= 人口 =================
 
