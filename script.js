@@ -226,9 +226,9 @@ function chooseCountry(country) {
     countryScreen.style.display = "none";
     gameScreen.style.display = "block";
 
-    createMap();
-
     createStartingUnits();
+
+    createMap();
     
     updatePopulation();
 
